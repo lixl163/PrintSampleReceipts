@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvPairedDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lvPairedDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:stackFromBottom="true" />
+
+    <TextView
+        android:id="@+id/tvNewDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="其他"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lvNewDevices"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:background="#ffffff"
+        android:stackFromBottom="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btBluetoothScan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_style"
+        android:text="扫描蓝牙设备……" />
+</LinearLayout>
